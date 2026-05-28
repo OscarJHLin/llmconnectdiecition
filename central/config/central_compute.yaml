@@ -1,0 +1,21 @@
+node:
+  name: central_compute
+  type: compute_center
+  capabilities:
+    - task_distribution
+    - result_aggregation
+    - model_inference
+
+ai:
+  backend: ollama
+  host: localhost
+  port: 11434
+  default_model: null
+
+network:
+  multicast_group: 224.0.0.1
+  multicast_port: 5000
+
+task:
+  timeout: 300
+  max_retries: 3

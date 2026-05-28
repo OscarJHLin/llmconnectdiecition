@@ -1,0 +1,15 @@
+node:
+  name: hermes_node
+  type: compute_node
+  capabilities:
+    - inference
+    - embedding
+    - analysis
+    - tool_calling
+
+network:
+  multicast_group: 224.0.0.1
+  multicast_port: 5000
+
+task:
+  max_concurrent: 1

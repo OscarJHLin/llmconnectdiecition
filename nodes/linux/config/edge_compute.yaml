@@ -1,0 +1,19 @@
+node:
+  name: edge_node
+  type: compute_node
+  capabilities:
+    - inference
+    - embedding
+
+ai:
+  backend: ollama
+  host: localhost
+  port: 11434
+  default_model: null
+
+network:
+  multicast_group: 224.0.0.1
+  multicast_port: 5000
+
+task:
+  max_concurrent: 1
